@@ -1,0 +1,35 @@
+{
+  "name": "i18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "casperjs": "^1.1.4",
+    "express": "^4.16.2",
+    "google-image-query": "^1.0.3",
+    "jade": "^1.11.0",
+    "node-mac": "^0.1.8",
+    "node-tesseract": "^0.2.7",
+    "nodemon": "^1.12.1",
+    "phantomjs": "^2.1.7",
+    "request": "^2.83.0",
+    "shell-escape": "^0.2.0",
+    "url": "^0.11.0",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaelleBe/cyber-resume-dispenser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaelleBe/cyber-resume-dispenser/issues"
+  },
+  "homepage": "https://github.com/AnaelleBe/cyber-resume-dispenser#readme"
+}

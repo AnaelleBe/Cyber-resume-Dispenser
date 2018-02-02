@@ -1,0 +1,239 @@
+@font-face {
+   font-family: 'AkzidenzGrotesk-Bold.otf';
+   src: url('AkzidenzGrotesk-Bold.otf') format('otf');
+ }
+
+ p{
+   font-size: 2em;
+   font-family: 'Montserrat', sans-serif;
+   color: #fff;
+ }
+
+ .patience {
+   font-size: 1em;
+   font-family: 'Source Code Pro', monospace;
+ }
+
+ #formbg{
+   background-color: #000
+
+ }
+
+form{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+label{
+  display: block;
+  color:#fff;
+  font-family: 'Source Code Pro', monospace;
+  margin: 20px;
+}
+
+#submit{
+    padding:10px;
+    border: none;
+    display: block;
+    margin: 30px;
+}
+
+
+.class1 {
+  font-family: 'Source Code Pro', monospace;
+  color: #000;
+  background-color: #fff;
+  text-align: right;
+  font-size: 3em;
+  margin: 10px;
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  position:absolute;
+  right: 600px;
+  z-index: 40;
+
+}
+img {
+  position: absolute;
+  top: 20px;
+  right:0px;
+  height: 500px;
+  z-index: 30;
+}
+body {
+  height: 1810.5px;
+  width: 1280px;
+  /*background-color: #EEE;*/
+
+}
+
+#hob{
+  font-size: 1em;
+      font-family: 'PT Mono', monospace;
+      position: absolute;
+      right: 805px;
+      bottom: 70px;
+      z-index: 7;
+      transform: rotate(-128deg);
+}
+
+.cyber {
+  position: absolute;
+  right: 20px;
+  bottom: -840px;
+  right:90px;
+  color: #fff;
+  /* font-family: 'PT Mono', monospace; */
+  text-align: right;
+  font-size: 1em;
+  /* margin-top: 20px; */
+  /* margin-left: 10px; */
+  /* margin-right: 20px; */
+
+  /* border-bottom: 1px solid #000; */
+  /* padding: 5px; */
+  /* background-color: #eaeaea; */
+  /* padding-top: 5px; */
+  z-index: 101;
+  background-color: #000;
+
+  font-family:'Source Code Pro', monospace;
+}
+.hobbies {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+  font-size: 3.5em;
+  position: absolute;
+  right: 626px;
+  bottom: 60px;
+  z-index: 100;
+  width: 207px;
+  /* background-color: #CCC; */
+  padding: 5px;
+  margin: 10px;
+  transform: rotate(-40deg);
+
+}
+
+.class3 {
+  font-family: 'PT Mono', monospace;
+  position: absolute;
+  bottom: 330px;
+}
+
+.txt1 {
+  font-family:'Source Code Pro', monospace;
+      text-align: left;
+      font-size: 0.9em;
+      margin: 150px;
+      width: 650px;
+      padding-right: 345px;
+      line-height: 1.5;
+      position: absolute;
+      z-index: 2;
+      height: 300px;
+      padding-bottom: 20px;
+      top: 500px;
+}
+
+.txt2 {
+  font-family: 'Source Code Pro', monospace;
+      text-align: left;
+      font-size: 4em;
+      margin: 30px;
+      text-decoration: overline;
+      width: 520px;
+      height: 1700px;
+      padding: 5px;
+      text-decoration-color: white;
+      color: #FFF;
+      line-height: 1.5;
+      position: absolute;
+      top: -230px;
+      left: 910px;
+      z-index: 4;
+      overflow: hidden;
+}
+.txt3{
+  text-align: left;
+  font-size: 10em;
+  font-family:'Montserrat', sans-serif;
+  width: 250px;
+  padding: 5px;
+  line-height: 0.85;
+  position: absolute;
+  top: 501px;
+  z-index: -4;
+  overflow: hidden;
+  height: 250px;
+}
+.txt4{
+  font-family: 'Source Code Pro', monospace;
+  text-align: left;
+  font-size: 8.8em;
+  margin: -0px;
+  width: 750px;
+  line-height: 0.85;
+  position: absolute;
+  top: 971px;
+  left: 610px;
+  z-index: -4;
+  overflow: hidden;
+  height: 771px;
+}
+/*
+#fond1{
+position: absolute;
+width: 1000px;
+height: 700px;
+background-color: #F00;
+z-index: 3;
+left: 0px;
+top: 900px;
+}
+*/
+
+
+.p1{
+  font-family: 'PT Mono', monospace;
+text-align: left;
+font-size: 4.6em;
+margin: 30px;
+width: 200px;
+padding: 5px;
+position: absolute;
+top: 305px;
+left: 40px;
+}
+.p2{
+  font-family: 'PT Mono', monospace;
+  text-align: left;
+  font-size: 4.6em;
+  margin: 30px;
+  width: 200px;
+  padding: 5px;
+  position: absolute;
+  top: 395px;
+  left: 300px;
+
+}
+
+
+
+.content-source {
+    flow-into: content-flow contents;
+}
+
+.content-region {
+	flow-from: content-flow;
+	region-fragment: break;
+}
+#fond2{
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  background-color: #000;
+  z-index: 3;
+  left: 950px;
+  top: 700px;

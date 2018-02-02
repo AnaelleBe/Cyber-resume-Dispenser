@@ -8,6 +8,7 @@
     "express": "^4.16.2",
     "free-google-image-search": "^1.0.0",
     "google-image-query": "^1.0.3",
+    "google-images": "^2.1.0",
     "jade": "^1.11.0",
     "jsearch": "^1.0.0",
     "node-mac": "^0.1.8",

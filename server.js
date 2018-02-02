@@ -1,12 +1,12 @@
 // 127.0.0.1:8081
-var jsearch = require('jsearch');
+const GoogleImages = require('google-images');
 var express = require('express');
 var app = express();
 var google_image = require('google-image-query');
 var request = require('request');
 
 
-
+const client = new GoogleImages('013224784015413544655:vptewwqd1bc','AIzaSyDPJvToitzwoyZrEHyQG5v-zQMzPE3fW-I');
 
 
 var bdd1 = ["Cyber-résumé"];
@@ -44,7 +44,7 @@ app.get('/', function (req, res) {
          var paragraphe2 = bdd5[Math.floor(Math.random() * bdd5.length)];
 
          // Lance la recherche google image
-         jsearch.google(prenom+"%20"+nom, 1, function(url_list){
+         client.search(prenom+" "+nom).then(url_list => {
 
            if (url_list == 'server-error') {
               res.send('Il y a eu un soucis avec le serveur..');
@@ -61,10 +61,10 @@ app.get('/', function (req, res) {
              paragraphe: paragraphe,
              paragraphe2: paragraphe2,
              paragraphe3: paragraphe3,
-             url_pic: url_list[0],
+             url_pic: url_list[0].url,
              texts: texts
            });
-            console.log(url_list);
+            console.log(url_list[0].url);
 
          });
        });

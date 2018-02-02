@@ -44,7 +44,7 @@ app.get('/', function (req, res) {
          var paragraphe2 = bdd5[Math.floor(Math.random() * bdd5.length)];
 
          // Lance la recherche google image
-         client.search(prenom+" "+nom).then(url_list => {
+         client.search('"'+prenom+''+nom+'"').then(url_list => {
 
            if (url_list == 'server-error') {
               res.send('Il y a eu un soucis avec le serveur..');

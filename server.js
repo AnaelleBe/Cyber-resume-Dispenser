@@ -1,9 +1,10 @@
 // 127.0.0.1:8081
-
+var jsearch = require('jsearch');
 var express = require('express');
 var app = express();
 var google_image = require('google-image-query');
 var request = require('request');
+
 
 
 
@@ -30,10 +31,9 @@ app.get('/', function (req, res) {
       request('http://localhost:8585?prenom='+prenom+'&nom='+nom, function(error, response, data) {
       //  console.log(data) // 200
         console.log('scrapin request done');
-        console.log(response);
          var texts = data;
 
-         var username = req.query.prenom+" "+req.query.nom;
+         var username = prenom+" "+nom;
 
 
          var paragraphe3 = bdd6[Math.floor(Math.random() * bdd6.length)];
@@ -44,7 +44,7 @@ app.get('/', function (req, res) {
          var paragraphe2 = bdd5[Math.floor(Math.random() * bdd5.length)];
 
          // Lance la recherche google image
-         google_image.search(username, 1,function(url_list){
+         jsearch.google(prenom+"%20"+nom, 1, function(url_list){
 
            if (url_list == 'server-error') {
               res.send('Il y a eu un soucis avec le serveur..');
@@ -64,7 +64,7 @@ app.get('/', function (req, res) {
              url_pic: url_list[0],
              texts: texts
            });
-            console.log(url_list[0]);
+            console.log(url_list);
 
          });
        });
